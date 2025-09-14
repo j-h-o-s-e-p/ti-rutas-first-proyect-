@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<title>Rutas arequipa</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			<h1 id="titulo">RUTAS DE AREQUIPA</h1>
+		    <div id="form">
+                <input type="text" id="latInicio" placeholder="Latitud Inicio">
+                <input type="text" id="lngInicio" placeholder="Longitud inicio">
+		        <button id="botonInicio">Seleccionar</button>
+		        <input type="text" id="latFin" placeholder="Latitud Destino">
+                <input type="text" id="lngFin" placeholder="Longitud Destino">
+		        <button id="botonFin">Seleccionar</button><br>
+                <button id="boton1">Busqueda para 1 ruta</button>
+				<button id="boton2">Busqueda para 2 rutas</button>
+            </div>
+	        <div id="barra">
+		        <ul id="lista">
+			        <input type="checkbox" id="miCheckbox1"><label for="miCheckbox13">Dolores San Martin</label><br>
+			        <input type="checkbox" id="miCheckbox2"><label for="miCheckbox13">COTUM A</label><br>
+			        <input type="checkbox" id="miCheckbox3"><label for="miCheckbox13">A15-Miraflores</label><br>
+			        <input type="checkbox" id="miCheckbox4"><label for="miCheckbox13">Alto Selva Alegre</label><br>
+			        <input type="checkbox" id="miCheckbox5"><label for="miCheckbox13">C2-4D Cono Norte</label><br>
+			        <input type="checkbox" id="miCheckbox6"><label for="miCheckbox13">BJUANXXIII</label><br>
+		    	    <input type="checkbox" id="miCheckbox7"><label for="miCheckbox13">COTUM B</label><br>
+		    	    <input type="checkbox" id="miCheckbox8"><label for="miCheckbox13">Alto Libertad C7-5</label><br>
+			        <input type="checkbox" id="miCheckbox9"><label for="miCheckbox13">C 3 de Octubre</label><br>
+			        <input type="checkbox" id="miCheckbox10"><label for="miCheckbox13">C7 Aqp Masivo 7-09</label><br>
+			        <input type="checkbox" id="miCheckbox11"><label for="miCheckbox13">Mariano Melgar A</label><br>
+			        <input type="checkbox" id="miCheckbox12"><label for="miCheckbox13">Polanco B</label><br>
+			        <input type="checkbox" id="miCheckbox13"><label for="miCheckbox13">B 3 de Octubre</label><br>
+			        <input type="checkbox" id="miCheckbox14"><label for="miCheckbox13">Cayma Enace</label><br>
+			        <input type="checkbox" id="miCheckbox15"><label for="miCheckbox13">La Perla S.R.L.T.D.A</label><br>
+			        <input type="checkbox" id="miCheckbox16"><label for="miCheckbox13">15 de Agosto</label><br>
+			        <input type="checkbox" id="miCheckbox17"><label for="miCheckbox13">Oriol A</label><br>
+			        <input type="checkbox" id="miCheckbox18"><label for="miCheckbox13">Uchumayo</label><br>
+		        </ul>
+		        <button id="boton3">Limpiar Mapa</button>
+	        </div>
+		</div>
+
+
+		<div class="midle">
+			<div id="map">
+				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD74ifl1AeaupdBcVF983dSjWbl1zL0x9U&callback=initMap"></script>
+			</div>
+			<br>
+			<div id="guia">
+				<img alt="linea azul" src="iconos/linea-azul.png" width="25" height="25"><p>Ruta de ida</p>
+				<img alt="linea roja" src="iconos/linea-roja.png" width="25" height="25"><p>Ruta de regreso</p>
+				<img alt="parada roja" src="iconos/parada-de-autobus-vuelta.png" width="25" height="25"><p>Paradero de vuelta</p>
+				<img alt="parada azul" src="iconos/parada-de-autobus-ida.png" width="25" height="25"><p>Paradero de ida</p>
+				<img alt="ubicacion" src="iconos/ubicacion.png" width="25" height="25"><p>Ubicacion actual</p>
+				<img alt="destino" src="iconos/destino.png" width="25" height="25"><p>Destino</p>
+				<img alt="paradero intermedio" src="iconos/paradero-intermedio.png" width="25" height="25"><p>Paradero cercano</p>
+				<img alt="paradero de cambio" src="iconos/cambio-paradero.png" width="25" height="25"><p>Cambio de ruta</p>
+			</div>
+		</div>
+
+
+		<div class="right">
+			<div id="container"></div>
+            <div id="result"></div>
+		</div>
+
+	</div>
+</body>
+</html>

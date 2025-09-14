@@ -1,0 +1,153 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url('iconos/fondo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+.container {
+	display: flex;
+	height: 100%;
+}
+
+/*Contenedor izquierdo,con sus diversos divs*/
+.left {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden; 
+}
+#titulo{
+	color: rgb(255, 174, 0);
+	text-align: center;
+	width: 350px;
+	border: 3px solid rgb(21, 255, 0);
+	background-color: rgba(250, 250, 250, 0.7);
+	border-radius: 10px;
+}
+#form{
+	text-align: center;
+    justify-content: center; 
+    align-items: center;
+}
+#boton1, #boton2, #boton3 {
+	width: 75%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	display: block;
+	margin: 20px auto;
+}
+#barra {
+
+	width: 300px;
+	border: 3px solid rgb(21, 255, 0);
+	background-color: rgb(200, 242, 255,0.8);
+	border-radius: 10px;
+}
+
+
+
+
+/*Contenedor del medio,con sus diversos divs*/
+.midle {
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden; 
+}
+
+#map {	
+	height: 75%;
+	width: 98%;
+	border: 3px solid rgb(21, 255, 0);
+	border-radius: 20px;
+}
+#guia{
+
+	border: 3px solid rgb(21, 255, 0);
+	border-radius: 20px;
+	display: flex;
+    align-items: center;
+}
+#guia p{
+	margin-right: 12px;
+	font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+
+
+/*Contenedor derecho,con sus diversos divs*/
+.right{
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden; 
+}
+
+#respuesta {
+	display: none;
+	width: 100%;
+	max-height: 400px;
+	overflow-y: auto; 
+	border: 1px solid #ccc;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#latInicio, #lngInicio, #latFin, #lngFin{
+	text-align: center;
+	width:125px;
+	height: 25px;
+	padding:3px 10px;
+	border:1px solid #1eec0b;
+	border-radius:3px;
+	background-color: rgb(200, 242, 255,0.8);
+	margin:8px 0;
+	display:inline-block;
+}
+
+
+#boton1, #boton2 {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#boton1:hover, #boton2:hover {
+    background-color: #45a049;
+}
+#boton1:active, #boton2:active {
+	background-color: #3e8e41;
+}
+
+#botonInicio ,#botonFin {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#container {
+	display: flex;
+	flex-direction: column; /* Alinea los botones verticalmente */
+	gap: 10px; /* Espacio entre botones */
+	padding: 10px; /* Espacio alrededor de los botones dentro del contenedor */
+}
+
+
+

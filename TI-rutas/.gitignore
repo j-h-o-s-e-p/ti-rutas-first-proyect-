@@ -1,0 +1,10 @@
+# Node.js
+node_modules/
+dist/
+
+# IDEs y OS
+.vscode/
+.DS_Store
+
+# SonarQube (opcional si no quieres subirlo todo)
+.scannerwork/
